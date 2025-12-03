@@ -25,28 +25,33 @@ way that another PSTAT197 student can easily follow and adapt to their own data.
 
 ## Repository Contents
 
-- `data/`  
-  - contains the example dataset used in the vignette (iris data in CSV form).
+### `data/`  
+- contains the example dataset used in the vignette (iris data in CSV form).
 
-- `scripts/`  
-  - `drafts/vignette-script.py`: Python script that loads the dataset, trains the XGBoost
-    classifier, makes predictions, and reports accuracy. This script mirrors the main steps
-    in the notebook, with line-by-line comments for reproducibility.
+### `scripts/`
+Contains scripts used in the vignette analysis.
 
-- Notebook file (Jupyter)  
-  - main vignette notebook that combines narrative text, code cells, and output.  
-    It explains what the model does, walks through the analysis, and shows the final results.
-    (Update this line with the exact filename, e.g. `xgboost_iris_vignette.ipynb`.)
+- `drafts/vignette-script.py`  
+  Python script that loads the iris dataset, transforms labels, trains the XGBoost
+  classifier, makes predictions, and prints test accuracy. This script mirrors the
+  main steps shown in the notebook and includes line-by-line comments for clarity.
 
-- `img/` (optional)  
-  - figures generated from the analysis, such as feature-importance plots or confusion
-    matrices, if used in the vignette.
+### Notebook File (Jupyter)
 
-- `README.md`  
-  - overview of the project, repository structure, and references.
+- `scripts/drafts/scipt.ipynb`  
+  This is the main vignette notebook. It combines explanation, code cells, and
+  generated output. The notebook includes a summary of what the model does,
+  demonstrates the full analysis pipeline, and presents final results.
 
-- `.gitignore`, `LICENSE`  
-  - standard project files created when the repository was initialized.
+### `img/` (optional)
+Figures generated from the analysis, such as potential feature-importance plots or
+confusion matrices (if added in the future).
+
+### `README.md`
+Overview of the project, repository structure, and references.
+
+### `.gitignore`, `LICENSE`
+Standard project files created when the repository was initialized.
 
 ## References
 
