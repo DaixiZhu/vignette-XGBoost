@@ -1,22 +1,60 @@
 # XGBoost Vignette
 
-### Overview
+## Overview
 
-Vignette on implementing XGBOOST using [DATASET]; created as a class project for PSTAT197A in Fall 2025.
+Vignette on implementing **XGBoost** for multi-class classification using the **iris** dataset; created as a class project for PSTAT197A in Fall 2025.
 
-### Contributors
+## Contributors
 
-Brooks Piper, Jay [LASTNAME], Coraline [LASTNAME], Shahil [LASTNAME], Taneesha [LASTNAME]
+- Coraline Zhu  
+- Brooks Piper
+- Jay Leung 
+- Shahil Patel
+- Taneesha Panda
 
-### Abstract
 
-XGBoost, or eXtreme Gradient Boosting, is a software library which provides a regularizing gradient boosting framework. This highly optimized implementation of gradient boosted trees boasts faster, more memory-efficient, and generally more robust inferential ability. 
+## Abstract
 
-### Structure
+This vignette demonstrates how to use the `xgboost` library in Python to build a multi-class
+classifier on the classic iris dataset. The goal is to predict the species of a flower from
+four numeric features (sepal length, sepal width, petal length, and petal width). We show
+how to load the data, split it into training and test sets with `scikit-learn`, fit an
+`XGBClassifier`, and evaluate performance using classification accuracy. The accompanying
+notebook includes a short summary of what the model does and presents the main results in a
+way that another PSTAT197 student can easily follow and adapt to their own data.
 
-* data/: TBD
-* scripts/: drafts and final script versions
+## Repository Contents
 
-### References
+- `data/`  
+  - contains the example dataset used in the vignette (iris data in CSV form).
 
-1. https://xgboost.readthedocs.io/en/stable/ 
+- `scripts/`  
+  - `drafts/vignette-script.py`: Python script that loads the dataset, trains the XGBoost
+    classifier, makes predictions, and reports accuracy. This script mirrors the main steps
+    in the notebook, with line-by-line comments for reproducibility.
+
+- Notebook file (Jupyter)  
+  - main vignette notebook that combines narrative text, code cells, and output.  
+    It explains what the model does, walks through the analysis, and shows the final results.
+    (Update this line with the exact filename, e.g. `xgboost_iris_vignette.ipynb`.)
+
+- `img/` (optional)  
+  - figures generated from the analysis, such as feature-importance plots or confusion
+    matrices, if used in the vignette.
+
+- `README.md`  
+  - overview of the project, repository structure, and references.
+
+- `.gitignore`, `LICENSE`  
+  - standard project files created when the repository was initialized.
+
+## References
+
+1. Chen, T., & Guestrin, C. (2016). **XGBoost: A Scalable Tree Boosting System.**  
+   *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*.
+
+2. XGBoost Developers. **XGBoost Documentation.**  
+   Available at: https://xgboost.readthedocs.io
+
+3. Fisher, R. A. (1936). **The Use of Multiple Measurements in Taxonomic Problems.**  
+   *Annals of Eugenics*, 7(2), 179–188. (Original source of the iris dataset.)
